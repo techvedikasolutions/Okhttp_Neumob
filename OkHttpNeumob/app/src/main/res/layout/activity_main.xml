@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10"
+    tools:context="com.techvedika.okhttp.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_okhttpSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb_okhttp"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_okhttp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="OkHTTP" />
+
+        <RadioButton
+            android:id="@+id/rb_okhttp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="OkHTTP2" />
+
+        <RadioButton
+            android:id="@+id/rb_okhttp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="OkHTTP3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_GetJsonData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_okhttpSelection"
+        android:layout_centerHorizontal="true"
+        android:text="Get Json Data" />
+
+    <Button
+        android:id="@+id/btn_GetImageFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_GetJsonData"
+        android:layout_centerHorizontal="true"
+        android:text="Get Image file" />
+
+    <Button
+        android:id="@+id/btn_PostJsonData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_GetImageFile"
+        android:layout_centerHorizontal="true"
+        android:text="Post JSON data" />
+
+    <TextView
+        android:id="@+id/txt_BytesDownloaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_PostJsonData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="Byted Downloaded:" />
+
+    <Button
+        android:id="@+id/btn_Okhttp_Piccasso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_PostJsonData"
+        android:layout_centerHorizontal="true"
+        android:text="Get Image Using Okhttp-Picasso"
+        android:visibility="gone"/>
+
+</RelativeLayout>
